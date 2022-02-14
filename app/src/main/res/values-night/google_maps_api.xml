@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="map_key" translatable="false">
+        AIzaSyCID7OqxNNznCqb7gZzrX9nhEjVC6IPfu0
+    </string>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=EB:70:07:F2:1D:69:CF:0D:94:78:0C:AB:FD:F8:9E:93:A6:DC:D8:4F%3Bedu.ib.openskyproject
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    edu.ib.openskyproject
+
+    SHA-1 certificate fingerprint:
+    EB:70:07:F2:1D:69:CF:0D:94:78:0C:AB:FD:F8:9E:93:A6:DC:D8:4F
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false">AIzaSyCID7OqxNNznCqb7gZzrX9nhEjVC6IPfu0</string>
+</resources>

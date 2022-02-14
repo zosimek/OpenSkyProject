@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Track Your Flight</string>
+    //What do you want to do?
+    <string name="heading"> </string>
+    <string name="button_show_position">Show flights around you</string>
+    <string name="button_show_flights">Show flights for specified boundaries</string>
+    <string name="button_track">Track flight</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="title_activity_show_flights">ShowFlightsActivity</string>
+    <string name="lat_min">Enter minimum latitude (decimal)</string>
+    <string name="lat_max">Enter maximum latitude (decimal)</string>
+    <string name="long_min">Enter minimum longitude (decimal)</string>
+    <string name="long_max">Enter maximum longitude (decimal)</string>
+    <string name="button_show">Show flights for boundaries</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_icao24_number">Enter icao24 number</string>
+    <string name="show_plane">Show plane</string>
+    <string name="return_to_boundaries">Return to boundaries</string>
+    <string name="textview">TextView</string>
+    <string name="enter_boundaries_and_search_flights">Enter boundaries and search flights</string>
+    <string name="return_to_main_screen">Return to main screen</string>
+    <string name="choose_distance">Choose distance</string>
+    <string name="enter_distance_km">Enter distance (km)</string>
+    <string name="return_to_main">Return to main</string>
+    <string name="open_clownsky">Open Clownsky</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opensky_background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".BoundariesActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="30"
+        android:gravity="center"
+        android:text="@string/enter_boundaries_and_search_flights"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtLatMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789-."
+        android:ems="10"
+        android:hint="@string/lat_min"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtLatMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789-."
+        android:ems="10"
+        android:hint="@string/lat_max"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtLongMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789-."
+        android:ems="10"
+        android:hint="@string/long_min"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edtLongMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789-."
+        android:ems="10"
+        android:hint="@string/long_max"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_show" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="returnToMain"
+        android:text="@string/return_to_main_screen" />
+
+    <TextView
+        android:id="@+id/tvErrorBounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    :android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowPlaneActivity">
+
+        <TextView
+            android:id="@+id/tvPlaneError"
+            android:layout_width="411dp"
+            android:layout_height="25dp"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="4dp"
+            android:text="Search by icao24"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/flight_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/flight_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="240dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Plane icao24"
+            android:textAlignment="center"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconDrawable="@drawable/ic_check_mark"
+            app:endIconMode="custom"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperText="Required *"
+            app:helperTextTextColor="@color/red"
+            app:layout_constraintBottom_toTopOf="@+id/btnShowPlane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@drawable/ic_baseline_airplanemode_active_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtIcao24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnShowPlane"
+            android:layout_width="240dp"
+            android:layout_height="59dp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginBottom="8dp"
+            android:text="Locate"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="showPlayCLicked"
+            tools:ignore="OnClick" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainerView"
+            android:layout_width="369dp"
+            android:layout_height="388dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="24dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
